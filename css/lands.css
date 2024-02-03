@@ -1,0 +1,35 @@
+.banner{
+    width: 100%;
+    display: flex;
+    padding: 60px 30px;
+    align-items: center;
+    background: #30658E;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner h5, .banner p{
+    color: #fff;
+}
+
+.banner form{
+    background: #fff;
+    width: fit-content;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.banner form select, .banner form input{
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+#search-bar{
+    color: #fff;
+    height: 100%;
+    padding: 12px 20px 10px 20px;
+    padding-top: 12px;
+    background-color: #332449;
+    border-radius: 0 4px 4px 0;
+}

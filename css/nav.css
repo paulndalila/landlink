@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Times, serif;
+    color: #1b1c1e;
+    background-color: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    padding: 10px 76px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 14px;
+    z-index: 900;
+}
+
+.header h3{
+    color: #30658E;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header li{
+    display: flex;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header li.link{
+    border-bottom: 2px solid #1b1c1e;
+}
+
+.header li a{
+    letter-spacing: 1px;
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    color: #1b1c1e;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.header .auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hamburger{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.685);
+    height: 30px;
+    width: 1.5cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+}
+
+#hamburger div{
+    width: 40px;
+    height: 2px;
+    background-color: #1b1c1e;
+}
+
+/* common land deco */
+
+.listings .lands{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 76px;
+    padding-bottom: 30px;
+}
+
+.listings .lands a{
+    width: 32%;
+    transition: .5s ease-in-out;
+}
+
+.listings .lands a:hover{
+    transform: scale(1.03);
+}
+
+.listings .lands a .card{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1c1e;
+    padding-top: 30px;
+    color: #fff;
+}
+
+footer .sections{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer .sections .sector{
+    width: 250px;
+}
+
+footer .copyright{
+    background: #383838;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 800px){
+
+    .header{
+        padding: 10px;        
+        padding-bottom: 0;
+    }
+
+    #hamburger{
+        display: flex;
+        border: none;
+        top: 15px;
+    }
+
+    .header .nav{
+        position: fixed;
+        flex-direction: column;
+        background-color: #30658E;
+        height: 100vh;
+        width: 75vw;
+        top: 0;
+        left: -100%;
+        padding: 0;
+        overflow: hidden;
+        animation: toggleHamburger;
+        animation-fill-mode: forwards;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        border: 1px solid #1b1c1e;
+    }
+
+    .header .nav li a{
+        color: #fff;
+    }
+
+    .header .auth{
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @keyframes toggleHamburger {
+        0%{
+            left: -100%;
+        }
+
+        100%{
+            left: 0%;
+        }
+    }
+
+    .header li{
+        border-radius: 5px;
+    }
+
+    .header li:hover{
+        background-color: #fff;
+    }
+
+    .header li:hover a{
+        color: black;
+    }
+    
+    .header li a{
+        font-size: 14px;
+    }
+    .header .shrinked{
+        display: none;
+    }
+
+    .exed:first-child{
+        font-size: 20px;
+    }
+
+    /* common land deco */
+    .listings .lands{
+        padding: 0 5px;
+    }
+
+    .listings .lands a{
+        width: 100%;
+        transition: .5s ease-in-out;
+    }
+
+    
+    .listings .lands a:hover{
+        transform: none;
+    }
+}

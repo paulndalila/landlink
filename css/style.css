@@ -1,0 +1,43 @@
+.banner{
+    background: #fafafa;
+    height: 480px;
+    display: flex;
+    padding: 20px 76px;
+    width: 100%;
+    gap: 20px;
+}
+
+.banner h1{
+    font-size: 62px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', 'Poppins', Times, serif;
+}
+
+.banner .hero-text p{
+    width: 98%;
+}
+
+.banner .hero-text a{
+    background: #923979;
+    text-decoration: none;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Poppins', Times, serif;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 800px){
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        width: 100%;
+        gap: 10px;
+        height: 100%;
+    }
+
+    .banner img{
+       display: none;
+    }
+}
