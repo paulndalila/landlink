@@ -60,8 +60,45 @@
         </div>
         <div class="buttons">
           <a href="post.land.html" class="btn btn-primary">Post Land</a>
-          <a href="#" class="btn btn-secondary">Edit Profile</a>
-          <a href="index.html" class="btn btn-danger">Delete Account</a>
+
+          <!-- edit offcanvas -->
+          <a href="#" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Edit Profile</a>
+
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">Edit your Profile</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              Profile photo
+              <input type="file">|
+              <input type="text" placeholder="Email Address">|
+              <input type="text" placeholder="Contact No.">
+              <button class="btn btn-primary">Update</button>
+              <button class="btn btn-secondary" data-bs-toggle="offcanvas" >Cancel</button>
+            </div>
+          </div>
+
+
+
+          <!-- Delete account trigger modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Delete Account</button>
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirm request</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Are you sure you want to delete your profile?</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger">Yes</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
