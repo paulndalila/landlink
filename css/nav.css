@@ -158,6 +158,12 @@ footer p{
     font-weight: 500;
 }
 
+footer .copyright p{
+    padding: 10px;
+    margin: 0;
+    font-size: 9px;
+}
+
 @media only screen and (max-width: 800px){
 
     .header{

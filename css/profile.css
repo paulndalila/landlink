@@ -1,0 +1,36 @@
+.banner{
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background: #30658E;
+}
+
+.profile-panel{
+    padding: 40px 80px;
+}
+
+.profile{
+    gap: 40px;
+    display: flex;
+}
+
+.profile .prof-img{
+    height: 300px;
+}
+
+.prof-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prof-details .row .col{
+    width: 200px;
+}
+
+.buttons{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}

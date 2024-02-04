@@ -1,0 +1,64 @@
+.banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #30658E;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px 20px 20px;
+}
+
+.banner h5, .banner p{
+    color: #fff;
+}
+
+.banner h5{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+}
+
+.contact{
+    display: flex;
+    gap: 20px;
+    margin-right: 76px;
+}
+
+.contact form{
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    padding: 15px 0 50px 15px;
+}
+
+.contact form p{
+    color: #30658E;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.contact form .name{
+    display: flex;
+    gap: 5px;
+}
+
+.contact form .name input{
+    width: 50%;
+}
+
+.contact form input, textarea{
+    border: 2px solid #30658E;
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.contact form .send-btn input{
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 30px;
+    border: 1px solid #923979;
+    background-color: #923979;
+}
