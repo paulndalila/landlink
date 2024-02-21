@@ -1,0 +1,33 @@
+.banner{
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background: #30658E;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard{    
+    padding: 40px 80px;
+}
+
+.searchbar{
+    border: 1px solid #30658E;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.searchbar input{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+}
+
+#search{
+    color: #fff;
+    background-color: #30658E;
+}
